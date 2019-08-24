@@ -1,2 +1,2 @@
-# dev-study-notes
+# The Programming Notebook
 Notebook on programming.

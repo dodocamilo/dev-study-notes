@@ -35,3 +35,7 @@ The word “port” is supposed to evoke thoughts of ‘’ports’’ in an ope
 The protocol for a port is given by the purpose of the conversation between the two devices. 
 
 The protocol takes the form of an application program interface (API).
+
+## References
+
+https://alistair.cockburn.us/hexagonal-architecture/

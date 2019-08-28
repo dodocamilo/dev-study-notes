@@ -16,7 +16,7 @@ Allow an application to equally be driven by users, programs, automated test or 
 
 As events arrive from the outside world at a port, a technology-specific adapter converts it into a usable message and passes it to the application. The application is blissfully ignorant of the nature of the input device. When the application has something to send out, it sends it out through a port to an adapter, which creates the appropriate signals needed by the receiving technology \(human or automated\). The application has a semantically sound interaction with the adapters on all sides of it, without actually knowing the nature of the things on the other side of the adapters.
 
-* input device =&gt; port =&gt; adapter =&gt; application
+* input device =&gt; adapter =&gt; port =&gt; application
 * application =&gt; port =&gt; adapter =&gt; output device
 
 ## Motivation

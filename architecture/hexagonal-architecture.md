@@ -1,6 +1,8 @@
 # Hexagonal Architecture
 
-### Intent
+Hexagonal Architecture or Ports and Adapters is a pattern that promotes decoupling from technology and frameworks.
+
+## Intent
 
 Allow an application to equally be driven by users, programs, automated test or batch scripts. Allow an application to be developed and tested in isolation from its eventual run-time devices and databases.
 
@@ -19,21 +21,21 @@ Every functionality of the application is available through an API \(application
 
 The rule to obey is that code pertaining to the "inside" part should not leak into the "outside" part.
 
-For each external device there is an ‘’adapter’’ that converts the API definition to the signals needed by that device and vice versa. A graphical user interface or GUI is an example of an adapter that maps the movements of a person to the API of the port.
+For each external device there is an "adapter" that converts the API definition to the signals needed by that device and vice versa. A graphical user interface or GUI is an example of an adapter that maps the movements of a person to the API of the port.
 
-On another side of the application, the application communicates with an external entity to get data. The protocol is typically a database protocol. From the application’s perspective, if the database is moved from a SQL database to a flat file or any other kind of database, the conversation across the API should not change.
+On another side of the application, the application communicates with an external entity to get data. The protocol is typically a database protocol. From the application's perspective, if the database is moved from a SQL database to a flat file or any other kind of database, the conversation across the API should not change.
 
 The supposed problem with layered architecture is that it let the application logic leak across the layer boundaries.
 
 ## Port
 
-The word “port” is supposed to evoke thoughts of ‘’ports’’ in an operating system, where any device that adheres to the protocols of a port can be plugged into it; and ‘’ports’’ on electronics gadgets, where again, any device that fits the mechanical and electrical protocols can be plugged in.
+The word “port” is supposed to evoke thoughts of "ports" in an operating system, where any device that adheres to the protocols of a port can be plugged into it; and "ports" on electronics gadgets, where again, any device that fits the mechanical and electrical protocols can be plugged in.
 
 The protocol for a port is given by the purpose of the conversation between the two devices.
 
 The protocol takes the form of an application program interface \(API\).
 
-### References
+## References
 
 [https://alistair.cockburn.us/hexagonal-architecture/](https://alistair.cockburn.us/hexagonal-architecture/)
 

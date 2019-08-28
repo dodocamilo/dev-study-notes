@@ -2,6 +2,14 @@
 
 Hexagonal Architecture or Ports and Adapters is a pattern that promotes decoupling from technology and frameworks.
 
+## The Hexagon
+
+Inside the hexagon we just have the things that are important for the business problem that the application is trying to solve.
+
+The hexagon contains the business logic, with no references to any technology, framework or real world device. So the application is technology agnostic.
+
+Ports & Adapters pattern says nothing about the structure of the inside of the hexagon. You can have layers… you can have components by feature… you can have spagheti code… you can have a Big Ball of Mud… you can apply DDD tactical patterns… you can have a single CRUD… it’s up to you.
+
 ## Intent
 
 Allow an application to equally be driven by users, programs, automated test or batch scripts. Allow an application to be developed and tested in isolation from its eventual run-time devices and databases.
@@ -38,4 +46,5 @@ The protocol takes the form of an application program interface \(API\).
 ## References
 
 [https://alistair.cockburn.us/hexagonal-architecture/](https://alistair.cockburn.us/hexagonal-architecture/)
+https://softwarecampament.wordpress.com/portsadapters/
 
